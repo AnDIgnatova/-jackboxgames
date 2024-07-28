@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jackbox Games</title>
+  <link rel="canonical" href="https://jackboxgames.com" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body class="page-body">
+  <header class="page-header fixed-top sticky">
+    <nav class="page-nav page-nav--closed page-nav--nojs">
+      <button class="page-nav__toggle" type="button">
+        <svg width="37px" height="37px" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="page-nav__wrapper">
+        <ul class="page-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__item--active-white" href="#">Games</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__item--active-white" href="index.html">How to play</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Company</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link-last" href="#openModal">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="page-header-list">
+      <li class="page-header__item">
+        <a class="page-header__logo-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="Layer_2"
+            viewBox="0 0 451 168" version="1.1" width="71" height="88">
+            <path
+              d="m 125.09,148.16 c -0.43,0.98 -0.65,2.17 -0.65,3.04 0,2.28 1.85,3.69 5.1,3.69 4.99,0 8.68,-2.93 10.09,-11.4 l 0.76,-6.08 h -0.65 c -3.58,3.47 -8.14,5.75 -13.78,5.75 -8.36,0 -18.45,-4.23 -18.45,-19.97 0,-20.51 12.37,-32.34 26.05,-32.34 10.53,0 14.22,5.86 15.52,8.25 h 0.65 l 3.8,-7.16 h 14 l -9.12,51.55 c -2.61,14.87 -10.64,24.42 -29.63,24.42 -16.82,0 -23.23,-5.64 -23.23,-12.92 0,-3.04 0.98,-5.64 1.95,-7.16 l 17.58,0.33 z m 17.26,-21.82 3.36,-17.26 c -0.87,-2.93 -3.26,-4.88 -6.4,-4.88 -7.49,0 -11.94,8.57 -11.94,17.47 0,6.84 3.58,8.9 7.16,8.9 2.5,0 5.64,-1.41 7.81,-4.23 z"
+              id="path1" style="fill:#ffffff" />
+            <path
+              d="m 165.9,124.5 c 0,-19.97 11.4,-33.64 25.51,-33.64 9.23,0 13.02,4.34 15.3,8.14 h 0.65 l 3.8,-7.05 h 14.33 l -6.3,36.03 c -0.32,1.63 -0.98,5.1 1.95,5.1 1.3,0 2.71,-0.43 3.69,-0.87 l -1.74,12.27 c -2.82,0.87 -8.79,1.74 -12.16,1.74 -7.16,0 -9.88,-2.71 -10.53,-7.6 h -0.54 c -2.82,2.82 -8.14,7.6 -16.5,7.6 -8.36,0 -17.47,-5.54 -17.47,-21.71 z m 37.55,-16.06 c -0.76,-2.06 -2.6,-4.23 -5.75,-4.23 -5.75,0 -11.29,7.16 -11.29,19.43 0,7.05 2.82,9.33 6.3,9.33 3.04,0 5.43,-1.74 7.16,-4.02 z"
+              id="path2" style="fill:#ffffff" />
+            <path
+              d="m 252.41,101.06 c 2.93,-5.97 7.92,-10.2 16.39,-10.2 8.9,0 13.35,3.91 15.3,10.42 h 0.65 c 2.93,-5.43 7.27,-10.42 15.74,-10.42 9.99,0 16.17,4.88 16.17,15.52 0,1.95 -0.22,4.23 -0.65,6.4 l -2.71,15.2 c -0.33,1.85 -0.76,4.99 2.17,4.99 1.19,0 2.61,-0.43 3.58,-0.87 l -1.74,12.37 c -2.82,0.87 -8.79,1.74 -12.05,1.74 -8.47,0 -11.94,-4.01 -11.94,-10.31 0,-1.41 0.22,-2.93 0.44,-4.34 l 3.25,-18.78 c 0.22,-1.3 0.33,-2.82 0.33,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.71,3.36 -9.66,14.43 l -4.56,26.48 h -19.1 l 5.75,-32.34 c 0.22,-1.3 0.43,-2.82 0.43,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.81,3.36 -9.77,14.43 l -4.67,26.48 h -19.21 l 6.4,-36.25 c 0.32,-2.06 0.54,-4.67 -2.39,-4.67 -1.19,0 -2.5,0.32 -3.36,0.76 l 1.52,-12.59 c 2.61,-0.76 8.03,-1.52 11.72,-1.52 7.7,0 10.53,4.45 10.53,8.03 0,0.54 0,1.41 -0.11,2.17 h 0.65 z"
+              id="path3" style="fill:#ffffff" />
+            <path
+              d="m 353.89,90.86 c 14.76,0 23.66,7.27 23.66,17.69 0,3.8 -1.08,8.68 -2.61,11.83 H 341.3 c -0.33,1.74 -0.44,3.36 -0.44,4.67 0,5.86 2.61,8.47 6.84,8.47 4.67,0 8.79,-1.95 8.79,-7.05 l 17.47,0.11 c 0,13.67 -11.83,19.64 -26.7,19.64 -16.82,0 -25.18,-8.14 -25.18,-20.95 0,-18.67 8.79,-34.4 31.8,-34.4 z m 5.75,20.51 c 0.32,-0.87 0.54,-2.06 0.54,-3.36 0,-4.02 -2.71,-5.97 -6.62,-5.97 -4.99,0 -8.9,2.71 -10.63,9.33 z"
+              id="path4" style="fill:#ffffff" />
+            <path
+              d="m 394.92,127.54 c -0.22,0.87 -0.43,1.74 -0.43,2.71 0,2.71 1.52,5.21 7.6,5.21 5.43,0 7.92,-2.17 7.92,-4.99 0,-2.28 -1.85,-3.58 -5.43,-4.45 l -6.73,-1.63 c -11.29,-2.71 -16.17,-6.84 -16.17,-14.33 0,-11.61 9.12,-19.21 27.78,-19.21 18.66,0 22.47,8.36 22.47,13.78 0,1.41 -0.22,3.15 -0.65,4.45 l -16.71,0.11 c 0.32,-0.87 0.43,-1.85 0.43,-2.93 0,-1.95 -1.52,-4.45 -6.73,-4.45 -5.21,0 -7.82,2.39 -7.82,4.99 0,2.93 2.82,3.8 6.08,4.56 l 7.6,1.74 c 10.96,2.5 15.41,7.38 15.41,13.89 0,10.74 -7.82,19.21 -28.44,19.21 -19.1,0 -23.99,-8.25 -23.99,-14.22 0,-1.3 0.22,-2.93 0.65,-4.34 l 17.15,-0.11 z"
+              id="path5" style="fill:#ffffff" />
+            <path
+              d="M 37.45,85.48 C 34.89,100.02 26.63,108.16 13.26,108.16 7.91,108.16 3.38,107.23 0,106.3 L 4.07,92.58 c 2.09,0.7 4.3,1.4 6.75,1.4 3.02,0 5.12,-2.56 6.28,-9.19 L 27.22,26.76 H 47.8 L 37.45,85.49 Z M 31.52,2.91 H 51.99 L 49.2,18.49 H 28.73 Z"
+              id="path6" style="fill:#ffffff" />
+            <path
+              d="m 46.75,61.64 c 0,-21.4 12.21,-36.05 27.33,-36.05 9.88,0 13.95,4.65 16.4,8.72 h 0.7 l 4.07,-7.56 h 15.35 l -6.75,38.61 c -0.35,1.75 -1.05,5.47 2.09,5.47 1.4,0 2.91,-0.46 3.95,-0.93 l -1.86,13.14 C 105.01,83.97 98.61,84.9 95,84.9 87.32,84.9 84.42,81.99 83.72,76.76 H 83.14 C 80.12,79.78 74.42,84.9 65.46,84.9 56.5,84.9 46.74,78.97 46.74,61.64 Z M 86.99,44.43 c -0.81,-2.21 -2.79,-4.54 -6.16,-4.54 -6.16,0 -12.09,7.67 -12.09,20.82 0,7.56 3.02,10 6.75,10 3.26,0 5.81,-1.86 7.67,-4.3 L 87,44.43 Z"
+              id="path7" style="fill:#ffffff" />
+            <path
+              d="m 146.18,25.58 c 20,0 25.24,10.58 25.24,16.86 0,2.91 -0.81,5.47 -1.51,7.21 l -20.12,0.23 c 0.35,-1.51 0.7,-2.79 0.7,-4.54 0,-2.91 -1.28,-5.47 -5.47,-5.47 -7.33,0 -11.75,10 -11.75,21.51 0,5.7 2.33,9.3 6.51,9.3 4.77,0 8.26,-3.84 8.26,-10 l 20,0.12 c 0,12.91 -5.47,24.07 -28.96,24.07 -17.1,0 -26.86,-8.84 -26.86,-22.91 0,-19.19 10,-36.4 33.96,-36.4 z"
+              id="path8" style="fill:#ffffff" />
+            <path
+              d="m 226.65,70.13 c 1.05,0 2.32,-0.23 3.37,-0.58 l -2.44,13.72 c -3.14,1.05 -7.33,1.63 -11.28,1.63 -8.26,0 -10.47,-5.12 -11.51,-8.61 -1.74,-5.7 -4.42,-13.84 -5.58,-16.05 h -5.47 l -4.07,23.49 H 169.09 L 183.85,0 h 20.59 l -8.37,47.22 4.42,-0.46 c 2.44,-2.33 12.33,-18.03 14.65,-20 h 21.63 l -0.47,2.33 c -2.44,2.09 -15.58,20.47 -19.07,24.31 1.16,1.98 4.07,9.65 6.05,14.42 0.81,1.74 1.86,2.32 3.37,2.32 z"
+              id="path9" style="fill:#ffffff" />
+            <path
+              d="m 246.42,0 h 20.47 l -5.82,32.33 h 0.58 c 3.14,-3.49 7.79,-6.75 14.77,-6.75 8.72,0 18.84,5.7 18.84,22.21 0,27.56 -16.28,37.1 -28.72,37.1 -9.3,0 -13.26,-4.88 -15.24,-7.91 h -0.58 l -3.95,6.75 h -15.35 z m 8.61,66.75 c 0.93,2.21 3.37,3.95 6.39,3.95 6.05,0 12.91,-6.98 12.91,-20.82 0,-7.56 -3.72,-10 -7.33,-10 -2.79,0 -6.16,1.98 -8.14,4.54 l -3.84,22.33 z"
+              id="path10" style="fill:#ffffff" />
+            <path
+              d="m 330.15,25.58 c 19.31,0 27.68,9.65 27.68,23.37 0,20.7 -11.28,35.94 -33.03,35.94 -19.31,0 -27.45,-9.54 -27.45,-23.14 0,-20.7 10.93,-36.17 32.8,-36.17 z m 6.63,23.37 c 0,-6.16 -2.68,-9.07 -6.86,-9.07 -7.44,0 -11.74,7.67 -11.74,21.75 0,6.28 2.79,9.07 6.86,9.07 7.33,0 11.75,-7.56 11.75,-21.75 z"
+              id="path11" style="fill:#ffffff" />
+            <path
+              d="m 388.18,36.52 c 1.05,3.37 1.98,6.51 2.56,9.3 h 0.47 c 1.74,-3.61 3.72,-6.51 6.05,-9.77 l 6.63,-9.3 h 21.86 l -0.35,1.98 -21.52,25.82 6.4,12.68 c 1.28,2.33 2.91,2.91 4.3,2.91 1.39,0 2.79,-0.35 3.84,-0.81 l -2.44,13.96 c -3.02,0.81 -7.44,1.63 -11.51,1.63 -6.63,0 -9.65,-3.37 -11.4,-8.49 l -1.4,-4.19 c -1.05,-3.14 -1.63,-5.81 -2.21,-8.49 h -0.58 c -1.63,3.6 -3.61,6.51 -5.7,9.53 l -7.44,10.47 h -21.86 l 0.35,-1.86 21.98,-26.87 -5.82,-11.74 c -1.05,-2.33 -3.02,-2.91 -4.65,-2.91 -1.4,0 -2.67,0.35 -3.84,0.81 l 2.56,-13.95 c 3.02,-0.81 7.33,-1.63 11.51,-1.63 7.21,0 9.65,2.79 11.17,7.68 l 1.04,3.26 z"
+              id="path12" style="fill:#ffffff" />
+            <path
+              d="m 441.86,93.74 h 0.84 c 0.99,0 1.78,-0.33 1.78,-1.13 0,-0.7 -0.52,-1.17 -1.64,-1.17 -0.47,0 -0.8,0.05 -0.99,0.09 v 2.21 z m -0.04,4.32 h -1.78 c 0,0 0,-7.7 0,-7.7 0.7,-0.09 1.69,-0.24 2.96,-0.24 1.45,0 2.11,0.23 2.63,0.61 0.47,0.33 0.8,0.89 0.8,1.64 0,0.94 -0.7,1.55 -1.59,1.83 v 0.09 c 0.75,0.23 1.13,0.84 1.36,1.88 0.24,1.17 0.42,1.6 0.56,1.88 h -1.88 c -0.23,-0.28 -0.38,-0.94 -0.61,-1.88 -0.14,-0.8 -0.61,-1.17 -1.6,-1.17 h -0.84 c 0,0 0,3.05 0,3.05 z m -4.74,-3.99 c 0,3.43 2.58,6.15 6.01,6.14 3.33,0.05 5.86,-2.73 5.86,-6.1 0,-3.43 -2.54,-6.19 -5.96,-6.19 -3.33,0 -5.91,2.77 -5.91,6.15 m 13.84,0 c 0,4.32 -3.47,7.75 -7.88,7.75 -4.41,0 -7.93,-3.42 -7.94,-7.74 -0.01,-4.32 3.51,-7.7 7.97,-7.7 4.36,0 7.84,3.37 7.84,7.69"
+              id="path13" style="fill:#ffffff" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="page-header-list">
+      <li class="page-header__item page-header-list-none">
+        <a class="page-header__logo-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="Layer_2"
+            viewBox="0 0 451 168" version="1.1" width="71" height="88">
+            <path
+              d="m 125.09,148.16 c -0.43,0.98 -0.65,2.17 -0.65,3.04 0,2.28 1.85,3.69 5.1,3.69 4.99,0 8.68,-2.93 10.09,-11.4 l 0.76,-6.08 h -0.65 c -3.58,3.47 -8.14,5.75 -13.78,5.75 -8.36,0 -18.45,-4.23 -18.45,-19.97 0,-20.51 12.37,-32.34 26.05,-32.34 10.53,0 14.22,5.86 15.52,8.25 h 0.65 l 3.8,-7.16 h 14 l -9.12,51.55 c -2.61,14.87 -10.64,24.42 -29.63,24.42 -16.82,0 -23.23,-5.64 -23.23,-12.92 0,-3.04 0.98,-5.64 1.95,-7.16 l 17.58,0.33 z m 17.26,-21.82 3.36,-17.26 c -0.87,-2.93 -3.26,-4.88 -6.4,-4.88 -7.49,0 -11.94,8.57 -11.94,17.47 0,6.84 3.58,8.9 7.16,8.9 2.5,0 5.64,-1.41 7.81,-4.23 z"
+              id="path1" style="fill:#ffffff" />
+            <path
+              d="m 165.9,124.5 c 0,-19.97 11.4,-33.64 25.51,-33.64 9.23,0 13.02,4.34 15.3,8.14 h 0.65 l 3.8,-7.05 h 14.33 l -6.3,36.03 c -0.32,1.63 -0.98,5.1 1.95,5.1 1.3,0 2.71,-0.43 3.69,-0.87 l -1.74,12.27 c -2.82,0.87 -8.79,1.74 -12.16,1.74 -7.16,0 -9.88,-2.71 -10.53,-7.6 h -0.54 c -2.82,2.82 -8.14,7.6 -16.5,7.6 -8.36,0 -17.47,-5.54 -17.47,-21.71 z m 37.55,-16.06 c -0.76,-2.06 -2.6,-4.23 -5.75,-4.23 -5.75,0 -11.29,7.16 -11.29,19.43 0,7.05 2.82,9.33 6.3,9.33 3.04,0 5.43,-1.74 7.16,-4.02 z"
+              id="path2" style="fill:#ffffff" />
+            <path
+              d="m 252.41,101.06 c 2.93,-5.97 7.92,-10.2 16.39,-10.2 8.9,0 13.35,3.91 15.3,10.42 h 0.65 c 2.93,-5.43 7.27,-10.42 15.74,-10.42 9.99,0 16.17,4.88 16.17,15.52 0,1.95 -0.22,4.23 -0.65,6.4 l -2.71,15.2 c -0.33,1.85 -0.76,4.99 2.17,4.99 1.19,0 2.61,-0.43 3.58,-0.87 l -1.74,12.37 c -2.82,0.87 -8.79,1.74 -12.05,1.74 -8.47,0 -11.94,-4.01 -11.94,-10.31 0,-1.41 0.22,-2.93 0.44,-4.34 l 3.25,-18.78 c 0.22,-1.3 0.33,-2.82 0.33,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.71,3.36 -9.66,14.43 l -4.56,26.48 h -19.1 l 5.75,-32.34 c 0.22,-1.3 0.43,-2.82 0.43,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.81,3.36 -9.77,14.43 l -4.67,26.48 h -19.21 l 6.4,-36.25 c 0.32,-2.06 0.54,-4.67 -2.39,-4.67 -1.19,0 -2.5,0.32 -3.36,0.76 l 1.52,-12.59 c 2.61,-0.76 8.03,-1.52 11.72,-1.52 7.7,0 10.53,4.45 10.53,8.03 0,0.54 0,1.41 -0.11,2.17 h 0.65 z"
+              id="path3" style="fill:#ffffff" />
+            <path
+              d="m 353.89,90.86 c 14.76,0 23.66,7.27 23.66,17.69 0,3.8 -1.08,8.68 -2.61,11.83 H 341.3 c -0.33,1.74 -0.44,3.36 -0.44,4.67 0,5.86 2.61,8.47 6.84,8.47 4.67,0 8.79,-1.95 8.79,-7.05 l 17.47,0.11 c 0,13.67 -11.83,19.64 -26.7,19.64 -16.82,0 -25.18,-8.14 -25.18,-20.95 0,-18.67 8.79,-34.4 31.8,-34.4 z m 5.75,20.51 c 0.32,-0.87 0.54,-2.06 0.54,-3.36 0,-4.02 -2.71,-5.97 -6.62,-5.97 -4.99,0 -8.9,2.71 -10.63,9.33 z"
+              id="path4" style="fill:#ffffff" />
+            <path
+              d="m 394.92,127.54 c -0.22,0.87 -0.43,1.74 -0.43,2.71 0,2.71 1.52,5.21 7.6,5.21 5.43,0 7.92,-2.17 7.92,-4.99 0,-2.28 -1.85,-3.58 -5.43,-4.45 l -6.73,-1.63 c -11.29,-2.71 -16.17,-6.84 -16.17,-14.33 0,-11.61 9.12,-19.21 27.78,-19.21 18.66,0 22.47,8.36 22.47,13.78 0,1.41 -0.22,3.15 -0.65,4.45 l -16.71,0.11 c 0.32,-0.87 0.43,-1.85 0.43,-2.93 0,-1.95 -1.52,-4.45 -6.73,-4.45 -5.21,0 -7.82,2.39 -7.82,4.99 0,2.93 2.82,3.8 6.08,4.56 l 7.6,1.74 c 10.96,2.5 15.41,7.38 15.41,13.89 0,10.74 -7.82,19.21 -28.44,19.21 -19.1,0 -23.99,-8.25 -23.99,-14.22 0,-1.3 0.22,-2.93 0.65,-4.34 l 17.15,-0.11 z"
+              id="path5" style="fill:#ffffff" />
+            <path
+              d="M 37.45,85.48 C 34.89,100.02 26.63,108.16 13.26,108.16 7.91,108.16 3.38,107.23 0,106.3 L 4.07,92.58 c 2.09,0.7 4.3,1.4 6.75,1.4 3.02,0 5.12,-2.56 6.28,-9.19 L 27.22,26.76 H 47.8 L 37.45,85.49 Z M 31.52,2.91 H 51.99 L 49.2,18.49 H 28.73 Z"
+              id="path6" style="fill:#ffffff" />
+            <path
+              d="m 46.75,61.64 c 0,-21.4 12.21,-36.05 27.33,-36.05 9.88,0 13.95,4.65 16.4,8.72 h 0.7 l 4.07,-7.56 h 15.35 l -6.75,38.61 c -0.35,1.75 -1.05,5.47 2.09,5.47 1.4,0 2.91,-0.46 3.95,-0.93 l -1.86,13.14 C 105.01,83.97 98.61,84.9 95,84.9 87.32,84.9 84.42,81.99 83.72,76.76 H 83.14 C 80.12,79.78 74.42,84.9 65.46,84.9 56.5,84.9 46.74,78.97 46.74,61.64 Z M 86.99,44.43 c -0.81,-2.21 -2.79,-4.54 -6.16,-4.54 -6.16,0 -12.09,7.67 -12.09,20.82 0,7.56 3.02,10 6.75,10 3.26,0 5.81,-1.86 7.67,-4.3 L 87,44.43 Z"
+              id="path7" style="fill:#ffffff" />
+            <path
+              d="m 146.18,25.58 c 20,0 25.24,10.58 25.24,16.86 0,2.91 -0.81,5.47 -1.51,7.21 l -20.12,0.23 c 0.35,-1.51 0.7,-2.79 0.7,-4.54 0,-2.91 -1.28,-5.47 -5.47,-5.47 -7.33,0 -11.75,10 -11.75,21.51 0,5.7 2.33,9.3 6.51,9.3 4.77,0 8.26,-3.84 8.26,-10 l 20,0.12 c 0,12.91 -5.47,24.07 -28.96,24.07 -17.1,0 -26.86,-8.84 -26.86,-22.91 0,-19.19 10,-36.4 33.96,-36.4 z"
+              id="path8" style="fill:#ffffff" />
+            <path
+              d="m 226.65,70.13 c 1.05,0 2.32,-0.23 3.37,-0.58 l -2.44,13.72 c -3.14,1.05 -7.33,1.63 -11.28,1.63 -8.26,0 -10.47,-5.12 -11.51,-8.61 -1.74,-5.7 -4.42,-13.84 -5.58,-16.05 h -5.47 l -4.07,23.49 H 169.09 L 183.85,0 h 20.59 l -8.37,47.22 4.42,-0.46 c 2.44,-2.33 12.33,-18.03 14.65,-20 h 21.63 l -0.47,2.33 c -2.44,2.09 -15.58,20.47 -19.07,24.31 1.16,1.98 4.07,9.65 6.05,14.42 0.81,1.74 1.86,2.32 3.37,2.32 z"
+              id="path9" style="fill:#ffffff" />
+            <path
+              d="m 246.42,0 h 20.47 l -5.82,32.33 h 0.58 c 3.14,-3.49 7.79,-6.75 14.77,-6.75 8.72,0 18.84,5.7 18.84,22.21 0,27.56 -16.28,37.1 -28.72,37.1 -9.3,0 -13.26,-4.88 -15.24,-7.91 h -0.58 l -3.95,6.75 h -15.35 z m 8.61,66.75 c 0.93,2.21 3.37,3.95 6.39,3.95 6.05,0 12.91,-6.98 12.91,-20.82 0,-7.56 -3.72,-10 -7.33,-10 -2.79,0 -6.16,1.98 -8.14,4.54 l -3.84,22.33 z"
+              id="path10" style="fill:#ffffff" />
+            <path
+              d="m 330.15,25.58 c 19.31,0 27.68,9.65 27.68,23.37 0,20.7 -11.28,35.94 -33.03,35.94 -19.31,0 -27.45,-9.54 -27.45,-23.14 0,-20.7 10.93,-36.17 32.8,-36.17 z m 6.63,23.37 c 0,-6.16 -2.68,-9.07 -6.86,-9.07 -7.44,0 -11.74,7.67 -11.74,21.75 0,6.28 2.79,9.07 6.86,9.07 7.33,0 11.75,-7.56 11.75,-21.75 z"
+              id="path11" style="fill:#ffffff" />
+            <path
+              d="m 388.18,36.52 c 1.05,3.37 1.98,6.51 2.56,9.3 h 0.47 c 1.74,-3.61 3.72,-6.51 6.05,-9.77 l 6.63,-9.3 h 21.86 l -0.35,1.98 -21.52,25.82 6.4,12.68 c 1.28,2.33 2.91,2.91 4.3,2.91 1.39,0 2.79,-0.35 3.84,-0.81 l -2.44,13.96 c -3.02,0.81 -7.44,1.63 -11.51,1.63 -6.63,0 -9.65,-3.37 -11.4,-8.49 l -1.4,-4.19 c -1.05,-3.14 -1.63,-5.81 -2.21,-8.49 h -0.58 c -1.63,3.6 -3.61,6.51 -5.7,9.53 l -7.44,10.47 h -21.86 l 0.35,-1.86 21.98,-26.87 -5.82,-11.74 c -1.05,-2.33 -3.02,-2.91 -4.65,-2.91 -1.4,0 -2.67,0.35 -3.84,0.81 l 2.56,-13.95 c 3.02,-0.81 7.33,-1.63 11.51,-1.63 7.21,0 9.65,2.79 11.17,7.68 l 1.04,3.26 z"
+              id="path12" style="fill:#ffffff" />
+            <path
+              d="m 441.86,93.74 h 0.84 c 0.99,0 1.78,-0.33 1.78,-1.13 0,-0.7 -0.52,-1.17 -1.64,-1.17 -0.47,0 -0.8,0.05 -0.99,0.09 v 2.21 z m -0.04,4.32 h -1.78 c 0,0 0,-7.7 0,-7.7 0.7,-0.09 1.69,-0.24 2.96,-0.24 1.45,0 2.11,0.23 2.63,0.61 0.47,0.33 0.8,0.89 0.8,1.64 0,0.94 -0.7,1.55 -1.59,1.83 v 0.09 c 0.75,0.23 1.13,0.84 1.36,1.88 0.24,1.17 0.42,1.6 0.56,1.88 h -1.88 c -0.23,-0.28 -0.38,-0.94 -0.61,-1.88 -0.14,-0.8 -0.61,-1.17 -1.6,-1.17 h -0.84 c 0,0 0,3.05 0,3.05 z m -4.74,-3.99 c 0,3.43 2.58,6.15 6.01,6.14 3.33,0.05 5.86,-2.73 5.86,-6.1 0,-3.43 -2.54,-6.19 -5.96,-6.19 -3.33,0 -5.91,2.77 -5.91,6.15 m 13.84,0 c 0,4.32 -3.47,7.75 -7.88,7.75 -4.41,0 -7.93,-3.42 -7.94,-7.74 -0.01,-4.32 3.51,-7.7 7.97,-7.7 4.36,0 7.84,3.37 7.84,7.69"
+              id="path13" style="fill:#ffffff" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <main class="home-page">
+    <div data-v-611017ba="" data-v-f4e4a64b="" class="feature-section home-section">
+      <video autoplay loop muted class="bgvideo" id="bgvideo">
+        <source src="img/mixkit-ink-swirling-in-blue-tones-underwater-229-hd-ready.mp4" type="video/mp4">
+        </source>
+      </video>
+      <div data-v-611017ba="" class="feature-content"><img data-v-611017ba="" src="/img/jpp6-feature.png"
+          alt="The Jackbox Party Starter Logo" class="logo" tabindex="0">
+        <div data-v-611017ba="" class="flex-column"><a data-v-7538e740="" data-v-611017ba="" href="#openModal"
+            class="internal-storefront shopify" aria-label="button to purchase The Jackbox Party Pack 6"
+            tabindex="0"><!-- <span data-v-7538e740="" class="icon fa-duotone fa-cart-circle-plus" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;"></span> -->
+            <div data-v-7538e740="" class="buy-for-text">
+              <div data-v-7538e740="" class="bold">Sign Up</div>
+            </div>
+          </a>
+          <div data-v-4dbd3030="" data-v-611017ba="" class="plat-icons-container">
+            <div data-v-4dbd3030=""><a data-v-4dbd3030="" href="https://www.amazon.com/dp/B07YSWZLZF" target="_blank"
+                aria-label="link to amazon storefront" tabindex="0"
+                class="external-storefront amazon the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/amazon-57cb8f53.svg" alt="" class="storefront-icon"></a>
+            </div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://apps.apple.com/us/app/the-jackbox-party-pack-6/id1464212121" target="_blank"
+                aria-label="link to apple storefront" tabindex="0"
+                class="external-storefront apple the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/apple-156d9abf.svg" alt="" class="storefront-icon"></a></div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://store.epicgames.com/en-US/p/jackbox-party-pack-6" target="_blank"
+                aria-label="link to epic storefront" tabindex="0"
+                class="external-storefront epic the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/egs-c5c7732f.svg" alt="" class="storefront-icon"></a></div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://play.google.com/store/apps/details?id=com.jackboxgames.TJPP6Loader&amp;hl=en_US&amp;gl=US"
+                target="_blank" aria-label="link to google storefront" tabindex="0"
+                class="external-storefront google the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/google-a9d9aa71.svg" alt="" class="storefront-icon"></a>
+            </div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://www.humblebundle.com/store/the-jackbox-party-pack-6" target="_blank"
+                aria-label="link to humble storefront" tabindex="0"
+                class="external-storefront humble the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/humble-fd91db9b.svg" alt="" class="storefront-icon"></a>
+            </div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://www.xbox.com/en-us/games/store/the-jackbox-party-pack-6/9n2gdzthpjzx" target="_blank"
+                aria-label="link to microsoft storefront" tabindex="0"
+                class="external-storefront microsoft the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/xbox-d7f8b589.svg" alt="" class="storefront-icon"></a></div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://www.nintendo.com/us/store/products/the-jackbox-party-pack-6-switch" target="_blank"
+                aria-label="link to nintendo storefront" tabindex="0"
+                class="external-storefront nintendo the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/nintendo-switch-3e21bc3f.svg" alt=""
+                  class="storefront-icon"></a></div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://store.playstation.com/en-us/product/UP2139-CUSA15888_00-JBGPARTYPACK6PS4" target="_blank"
+                aria-label="link to sony storefront" tabindex="0"
+                class="external-storefront sony the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/ps-8b2a6ea5.svg" alt="" class="storefront-icon"></a></div>
+            <div data-v-4dbd3030=""><a data-v-4dbd3030=""
+                href="https://store.steampowered.com/app/1005300/the_jackbox_party_pack_6" target="_blank"
+                aria-label="link to steam storefront" tabindex="0"
+                class="external-storefront steam the-jackbox-party-pack-6"><img data-v-4dbd3030=""
+                  src="https://www.jackboxgames.com/assets/steam-89c1fdbc.svg" alt="" class="storefront-icon"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-container home-section home-section-banner">
+      <p class="project-name-before">Jackbox Games Official Website</p>
+      <h1 class="project-name">Jackbox Games Official Website</h1>
+      <div class="project-sec">
+        <div class="row">
+          <div class="project-image">
+            <div class="project_img">
+              <img src="img/hqdefault.png" alt="" />
+            </div>
+          </div>
+          <div class="project-list">
+            <ul class="project_list">
+              <li class="project_item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </li>
+              <li class="project_item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </li>
+            </ul>
+            <ul class="project_list project_list-games">
+              <li class="project_item">
+                <a href="#">
+                  <img src="img/dodo_tile_1_658a5071b5.avif" alt="" />
+                </a>
+              </li>
+              <li class="project_item">
+                <a href="#">
+                  <img src="img/fibbage4_tile_9acae4342d.avif" alt="" />
+                </a>
+              </li>
+              <li class="project_item">
+                <a href="#">
+                  <img src="img/quiplash_3_tile_b6fe3664ac.avif" alt="" />
+                </a>
+              </li>
+              <li class="project_item">
+                <a href="#">
+                  <img src="img/teeko2_tile_0ecff717b2.avif" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="project-container home-section home-section-game">
+      <p class="project-name-before">We're always up to something</p>
+      <h1 class="project-name">We're always up to something</h1>
+      <div class="project-sec">
+        <div class="row">
+          <ul class="project_list home_list-game">
+            <li class="home_item-game">
+              <a href="#">
+                <div class="project-img">
+                </div>
+              </a>
+              <p class="home_item-game-before">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <p class="home_item-game-before home_item-game-before-to">July 19, 2024</p>
+            </li>
+            <li class="home_item-game">
+              <a href="#">
+                <div class="project-img-to">
+                </div>
+              </a>
+              <p class="home_item-game-before">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <p class="home_item-game-before home_item-game-before-to">July 19, 2024</p>
+              <a href="#" class="anchor-button outline">Visit the Jackbox Games Blog</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-container home-section home-section-info">
+      <p class="project-name-before">Pick a Party Pack!</p>
+      <h1 class="project-name project-name-info">Pick a Party Pack!</h1>
+      <div class="project-sec">
+        <div class="row">
+          <div class="project-list project-list-info">
+            <ul class="project_list">
+              <li class="project_item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
+            <ul class="project_list project_list-games project_list-info">
+              <li class="project_item project_item-info">
+                <a href="#">
+                  <img src="img/pp10_wordmark_4faffe0789.avif" alt="" />
+                </a>
+              </li>
+              <li class="project_item project_item-info">
+                <a href="#">
+                  <img src="img/pp9_wordmark_2c3b59bc0f.avif" alt="" />
+                </a>
+              </li>
+              <li class="project_item project_item-info">
+                <a href="#">
+                  <img src="img/tjps_wordmark_46bbbb7c76.avif" alt="" />
+                </a>
+              </li>
+            </ul>
+            <ul class="page-header-list">
+              <li class="page-header__item">
+                <a class="page-header__logo-2" href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="Layer_2"
+                    viewBox="0 0 451 168" version="1.1" width="71" height="88">
+                    <path
+                      d="m 125.09,148.16 c -0.43,0.98 -0.65,2.17 -0.65,3.04 0,2.28 1.85,3.69 5.1,3.69 4.99,0 8.68,-2.93 10.09,-11.4 l 0.76,-6.08 h -0.65 c -3.58,3.47 -8.14,5.75 -13.78,5.75 -8.36,0 -18.45,-4.23 -18.45,-19.97 0,-20.51 12.37,-32.34 26.05,-32.34 10.53,0 14.22,5.86 15.52,8.25 h 0.65 l 3.8,-7.16 h 14 l -9.12,51.55 c -2.61,14.87 -10.64,24.42 -29.63,24.42 -16.82,0 -23.23,-5.64 -23.23,-12.92 0,-3.04 0.98,-5.64 1.95,-7.16 l 17.58,0.33 z m 17.26,-21.82 3.36,-17.26 c -0.87,-2.93 -3.26,-4.88 -6.4,-4.88 -7.49,0 -11.94,8.57 -11.94,17.47 0,6.84 3.58,8.9 7.16,8.9 2.5,0 5.64,-1.41 7.81,-4.23 z"
+                      id="path1" style="fill:#ffffff" />
+                    <path
+                      d="m 165.9,124.5 c 0,-19.97 11.4,-33.64 25.51,-33.64 9.23,0 13.02,4.34 15.3,8.14 h 0.65 l 3.8,-7.05 h 14.33 l -6.3,36.03 c -0.32,1.63 -0.98,5.1 1.95,5.1 1.3,0 2.71,-0.43 3.69,-0.87 l -1.74,12.27 c -2.82,0.87 -8.79,1.74 -12.16,1.74 -7.16,0 -9.88,-2.71 -10.53,-7.6 h -0.54 c -2.82,2.82 -8.14,7.6 -16.5,7.6 -8.36,0 -17.47,-5.54 -17.47,-21.71 z m 37.55,-16.06 c -0.76,-2.06 -2.6,-4.23 -5.75,-4.23 -5.75,0 -11.29,7.16 -11.29,19.43 0,7.05 2.82,9.33 6.3,9.33 3.04,0 5.43,-1.74 7.16,-4.02 z"
+                      id="path2" style="fill:#ffffff" />
+                    <path
+                      d="m 252.41,101.06 c 2.93,-5.97 7.92,-10.2 16.39,-10.2 8.9,0 13.35,3.91 15.3,10.42 h 0.65 c 2.93,-5.43 7.27,-10.42 15.74,-10.42 9.99,0 16.17,4.88 16.17,15.52 0,1.95 -0.22,4.23 -0.65,6.4 l -2.71,15.2 c -0.33,1.85 -0.76,4.99 2.17,4.99 1.19,0 2.61,-0.43 3.58,-0.87 l -1.74,12.37 c -2.82,0.87 -8.79,1.74 -12.05,1.74 -8.47,0 -11.94,-4.01 -11.94,-10.31 0,-1.41 0.22,-2.93 0.44,-4.34 l 3.25,-18.78 c 0.22,-1.3 0.33,-2.82 0.33,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.71,3.36 -9.66,14.43 l -4.56,26.48 h -19.1 l 5.75,-32.34 c 0.22,-1.3 0.43,-2.82 0.43,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.81,3.36 -9.77,14.43 l -4.67,26.48 h -19.21 l 6.4,-36.25 c 0.32,-2.06 0.54,-4.67 -2.39,-4.67 -1.19,0 -2.5,0.32 -3.36,0.76 l 1.52,-12.59 c 2.61,-0.76 8.03,-1.52 11.72,-1.52 7.7,0 10.53,4.45 10.53,8.03 0,0.54 0,1.41 -0.11,2.17 h 0.65 z"
+                      id="path3" style="fill:#ffffff" />
+                    <path
+                      d="m 353.89,90.86 c 14.76,0 23.66,7.27 23.66,17.69 0,3.8 -1.08,8.68 -2.61,11.83 H 341.3 c -0.33,1.74 -0.44,3.36 -0.44,4.67 0,5.86 2.61,8.47 6.84,8.47 4.67,0 8.79,-1.95 8.79,-7.05 l 17.47,0.11 c 0,13.67 -11.83,19.64 -26.7,19.64 -16.82,0 -25.18,-8.14 -25.18,-20.95 0,-18.67 8.79,-34.4 31.8,-34.4 z m 5.75,20.51 c 0.32,-0.87 0.54,-2.06 0.54,-3.36 0,-4.02 -2.71,-5.97 -6.62,-5.97 -4.99,0 -8.9,2.71 -10.63,9.33 z"
+                      id="path4" style="fill:#ffffff" />
+                    <path
+                      d="m 394.92,127.54 c -0.22,0.87 -0.43,1.74 -0.43,2.71 0,2.71 1.52,5.21 7.6,5.21 5.43,0 7.92,-2.17 7.92,-4.99 0,-2.28 -1.85,-3.58 -5.43,-4.45 l -6.73,-1.63 c -11.29,-2.71 -16.17,-6.84 -16.17,-14.33 0,-11.61 9.12,-19.21 27.78,-19.21 18.66,0 22.47,8.36 22.47,13.78 0,1.41 -0.22,3.15 -0.65,4.45 l -16.71,0.11 c 0.32,-0.87 0.43,-1.85 0.43,-2.93 0,-1.95 -1.52,-4.45 -6.73,-4.45 -5.21,0 -7.82,2.39 -7.82,4.99 0,2.93 2.82,3.8 6.08,4.56 l 7.6,1.74 c 10.96,2.5 15.41,7.38 15.41,13.89 0,10.74 -7.82,19.21 -28.44,19.21 -19.1,0 -23.99,-8.25 -23.99,-14.22 0,-1.3 0.22,-2.93 0.65,-4.34 l 17.15,-0.11 z"
+                      id="path5" style="fill:#ffffff" />
+                    <path
+                      d="M 37.45,85.48 C 34.89,100.02 26.63,108.16 13.26,108.16 7.91,108.16 3.38,107.23 0,106.3 L 4.07,92.58 c 2.09,0.7 4.3,1.4 6.75,1.4 3.02,0 5.12,-2.56 6.28,-9.19 L 27.22,26.76 H 47.8 L 37.45,85.49 Z M 31.52,2.91 H 51.99 L 49.2,18.49 H 28.73 Z"
+                      id="path6" style="fill:#ffffff" />
+                    <path
+                      d="m 46.75,61.64 c 0,-21.4 12.21,-36.05 27.33,-36.05 9.88,0 13.95,4.65 16.4,8.72 h 0.7 l 4.07,-7.56 h 15.35 l -6.75,38.61 c -0.35,1.75 -1.05,5.47 2.09,5.47 1.4,0 2.91,-0.46 3.95,-0.93 l -1.86,13.14 C 105.01,83.97 98.61,84.9 95,84.9 87.32,84.9 84.42,81.99 83.72,76.76 H 83.14 C 80.12,79.78 74.42,84.9 65.46,84.9 56.5,84.9 46.74,78.97 46.74,61.64 Z M 86.99,44.43 c -0.81,-2.21 -2.79,-4.54 -6.16,-4.54 -6.16,0 -12.09,7.67 -12.09,20.82 0,7.56 3.02,10 6.75,10 3.26,0 5.81,-1.86 7.67,-4.3 L 87,44.43 Z"
+                      id="path7" style="fill:#ffffff" />
+                    <path
+                      d="m 146.18,25.58 c 20,0 25.24,10.58 25.24,16.86 0,2.91 -0.81,5.47 -1.51,7.21 l -20.12,0.23 c 0.35,-1.51 0.7,-2.79 0.7,-4.54 0,-2.91 -1.28,-5.47 -5.47,-5.47 -7.33,0 -11.75,10 -11.75,21.51 0,5.7 2.33,9.3 6.51,9.3 4.77,0 8.26,-3.84 8.26,-10 l 20,0.12 c 0,12.91 -5.47,24.07 -28.96,24.07 -17.1,0 -26.86,-8.84 -26.86,-22.91 0,-19.19 10,-36.4 33.96,-36.4 z"
+                      id="path8" style="fill:#ffffff" />
+                    <path
+                      d="m 226.65,70.13 c 1.05,0 2.32,-0.23 3.37,-0.58 l -2.44,13.72 c -3.14,1.05 -7.33,1.63 -11.28,1.63 -8.26,0 -10.47,-5.12 -11.51,-8.61 -1.74,-5.7 -4.42,-13.84 -5.58,-16.05 h -5.47 l -4.07,23.49 H 169.09 L 183.85,0 h 20.59 l -8.37,47.22 4.42,-0.46 c 2.44,-2.33 12.33,-18.03 14.65,-20 h 21.63 l -0.47,2.33 c -2.44,2.09 -15.58,20.47 -19.07,24.31 1.16,1.98 4.07,9.65 6.05,14.42 0.81,1.74 1.86,2.32 3.37,2.32 z"
+                      id="path9" style="fill:#ffffff" />
+                    <path
+                      d="m 246.42,0 h 20.47 l -5.82,32.33 h 0.58 c 3.14,-3.49 7.79,-6.75 14.77,-6.75 8.72,0 18.84,5.7 18.84,22.21 0,27.56 -16.28,37.1 -28.72,37.1 -9.3,0 -13.26,-4.88 -15.24,-7.91 h -0.58 l -3.95,6.75 h -15.35 z m 8.61,66.75 c 0.93,2.21 3.37,3.95 6.39,3.95 6.05,0 12.91,-6.98 12.91,-20.82 0,-7.56 -3.72,-10 -7.33,-10 -2.79,0 -6.16,1.98 -8.14,4.54 l -3.84,22.33 z"
+                      id="path10" style="fill:#ffffff" />
+                    <path
+                      d="m 330.15,25.58 c 19.31,0 27.68,9.65 27.68,23.37 0,20.7 -11.28,35.94 -33.03,35.94 -19.31,0 -27.45,-9.54 -27.45,-23.14 0,-20.7 10.93,-36.17 32.8,-36.17 z m 6.63,23.37 c 0,-6.16 -2.68,-9.07 -6.86,-9.07 -7.44,0 -11.74,7.67 -11.74,21.75 0,6.28 2.79,9.07 6.86,9.07 7.33,0 11.75,-7.56 11.75,-21.75 z"
+                      id="path11" style="fill:#ffffff" />
+                    <path
+                      d="m 388.18,36.52 c 1.05,3.37 1.98,6.51 2.56,9.3 h 0.47 c 1.74,-3.61 3.72,-6.51 6.05,-9.77 l 6.63,-9.3 h 21.86 l -0.35,1.98 -21.52,25.82 6.4,12.68 c 1.28,2.33 2.91,2.91 4.3,2.91 1.39,0 2.79,-0.35 3.84,-0.81 l -2.44,13.96 c -3.02,0.81 -7.44,1.63 -11.51,1.63 -6.63,0 -9.65,-3.37 -11.4,-8.49 l -1.4,-4.19 c -1.05,-3.14 -1.63,-5.81 -2.21,-8.49 h -0.58 c -1.63,3.6 -3.61,6.51 -5.7,9.53 l -7.44,10.47 h -21.86 l 0.35,-1.86 21.98,-26.87 -5.82,-11.74 c -1.05,-2.33 -3.02,-2.91 -4.65,-2.91 -1.4,0 -2.67,0.35 -3.84,0.81 l 2.56,-13.95 c 3.02,-0.81 7.33,-1.63 11.51,-1.63 7.21,0 9.65,2.79 11.17,7.68 l 1.04,3.26 z"
+                      id="path12" style="fill:#ffffff" />
+                    <path
+                      d="m 441.86,93.74 h 0.84 c 0.99,0 1.78,-0.33 1.78,-1.13 0,-0.7 -0.52,-1.17 -1.64,-1.17 -0.47,0 -0.8,0.05 -0.99,0.09 v 2.21 z m -0.04,4.32 h -1.78 c 0,0 0,-7.7 0,-7.7 0.7,-0.09 1.69,-0.24 2.96,-0.24 1.45,0 2.11,0.23 2.63,0.61 0.47,0.33 0.8,0.89 0.8,1.64 0,0.94 -0.7,1.55 -1.59,1.83 v 0.09 c 0.75,0.23 1.13,0.84 1.36,1.88 0.24,1.17 0.42,1.6 0.56,1.88 h -1.88 c -0.23,-0.28 -0.38,-0.94 -0.61,-1.88 -0.14,-0.8 -0.61,-1.17 -1.6,-1.17 h -0.84 c 0,0 0,3.05 0,3.05 z m -4.74,-3.99 c 0,3.43 2.58,6.15 6.01,6.14 3.33,0.05 5.86,-2.73 5.86,-6.1 0,-3.43 -2.54,-6.19 -5.96,-6.19 -3.33,0 -5.91,2.77 -5.91,6.15 m 13.84,0 c 0,4.32 -3.47,7.75 -7.88,7.75 -4.41,0 -7.93,-3.42 -7.94,-7.74 -0.01,-4.32 3.51,-7.7 7.97,-7.7 4.36,0 7.84,3.37 7.84,7.69"
+                      id="path13" style="fill:#ffffff" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="project-container home-section home-section-form">
+      <div class="home_section-form">
+      <h1 class="project-name project-name-form">Pick a Party Pack!</h1>
+      <h2 class="project-name project-name-form-to">Pick a Party Pack!</h2>
+      <div class="project-sec">
+        <div class="rows">
+          <div class="project-list-form">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="project-name project-name-form-to">Follow us on Social Media</h2>
+      <div data-v-723ab9bc="" class="social-link-content">
+        <div data-v-723ab9bc="" class="socials"><a data-v-723ab9bc="" href="https://www.facebook.com/JackboxGames/"
+            target="_blank"><span data-v-723ab9bc="" class="visually-hidden">Facebook</span><img data-v-723ab9bc=""
+              class="icon" src="/img/facebook-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a
+            data-v-723ab9bc="" href="https://www.instagram.com/playjackboxgames/" target="_blank"><span
+              data-v-723ab9bc="" class="visually-hidden">Instagram</span><img data-v-723ab9bc="" class="icon"
+              src="/img/instagram-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+            href="https://www.reddit.com/r/jackboxgames/" target="_blank"><span data-v-723ab9bc=""
+              class="visually-hidden">Reddit</span><img data-v-723ab9bc="" class="icon" src="/img/reddit-svgrepo-com.svg"
+              alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+            href="https://www.tiktok.com/@playjackboxgames" target="_blank"><span data-v-723ab9bc=""
+              class="visually-hidden">Tik Tok</span><img data-v-723ab9bc="" class="icon"
+              src="/img/tiktok-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+            href="https://twitter.com/jackboxgames" target="_blank"><span data-v-723ab9bc=""
+              class="visually-hidden">Twitter</span><img data-v-723ab9bc="" class="icon"
+              src="/img/twitter-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+            href="https://www.youtube.com/jackboxgames" target="_blank"><span data-v-723ab9bc=""
+              class="visually-hidden">Youtube</span><img data-v-723ab9bc="" class="icon"
+              src="/img/youtube-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a></div>
+      </div>
+      <h2 class="project-name project-name-form-to project-name-form-to-before">Join our Newsletter</h2>
+      <p class="home_item-game-before"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.</p>
+        <div class="custom-form">
+          <form action="thanks.php" method="get">
+              <input required name="email" type="email" id="email" class="custom-form-control" placeholder="Email">
+              <input type="submit" id="submit" name="send" class="submitBnt" value="Unirs">
+          </form>
+      </div>
+      </div>
+      <div class="home_section-form home_section-form-img">
+        <a href="#">
+          <img src="img/1684618084_mykaleidoscope-ru-p-lyudi-v-raznoi-odezhde-40.png" alt="" width="100%"/>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="project-container home-section home-section-game-list">
+      
+      <div class="project-sec home-section-game-list-sec">
+        <div class="row">
+          <ul class="project_list home_list-game home_list-game-to">
+            <li class="home_item-game">
+              <a href="#">
+                <div class="project-img project-img-last">
+                </div>
+              </a>
+              <p class="project-name-before">We're always up to something</p>
+      <h1 class="project-name">We're always up to something</h1>
+            </li>
+            <li class="home_item-game home_item-game-list">
+              <details class="details">
+                <summary class="details__title">Question 1</summary>
+                <div class="details__content">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum omnis beatae itaque! Maxime consequuntur architecto, voluptatibus iste aliquid quaerat dolores, culpa repellendus optio omnis rem saepe quisquam incidunt, numquam molestias?</p>
+                </div>
+              </details>
+              <details class="details">
+                <summary class="details__title">Question 2</summary>
+                <div class="details__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum omnis beatae itaque! Maxime consequuntur architecto, voluptatibus iste aliquid quaerat dolores, culpa repellendus optio omnis rem saepe quisquam incidunt, numquam molestias?</p>
+                </div>
+              </details>
+              <details class="details">
+                <summary class="details__title">Question 3</summary>
+                <div class="details__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum omnis beatae itaque! Maxime consequuntur architecto, voluptatibus iste aliquid quaerat dolores, culpa repellendus optio omnis rem saepe quisquam incidunt, numquam molestias?</p>
+                </div>
+              </details>
+              <details class="details">
+                <summary class="details__title">Question 4</summary>
+                <div class="details__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum omnis beatae itaque! Maxime consequuntur architecto, voluptatibus iste aliquid quaerat dolores, culpa repellendus optio omnis rem saepe quisquam incidunt, numquam molestias?</p>
+                </div>
+              </details>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+    <div id="openModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Sign Up</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">    
+        <div class="custom-form">
+          <form action="thanks.php" method="get">
+              <input required name="email" type="email" id="email" class="custom-form-control" placeholder="Email">
+              <input type="submit" id="submit" name="send" class="submitBnt" value="Unirs">
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+             <a class="page-header__logo-2" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="Layer_2"
+                viewBox="0 0 451 168" version="1.1" width="71" height="88">
+                <path
+                  d="m 125.09,148.16 c -0.43,0.98 -0.65,2.17 -0.65,3.04 0,2.28 1.85,3.69 5.1,3.69 4.99,0 8.68,-2.93 10.09,-11.4 l 0.76,-6.08 h -0.65 c -3.58,3.47 -8.14,5.75 -13.78,5.75 -8.36,0 -18.45,-4.23 -18.45,-19.97 0,-20.51 12.37,-32.34 26.05,-32.34 10.53,0 14.22,5.86 15.52,8.25 h 0.65 l 3.8,-7.16 h 14 l -9.12,51.55 c -2.61,14.87 -10.64,24.42 -29.63,24.42 -16.82,0 -23.23,-5.64 -23.23,-12.92 0,-3.04 0.98,-5.64 1.95,-7.16 l 17.58,0.33 z m 17.26,-21.82 3.36,-17.26 c -0.87,-2.93 -3.26,-4.88 -6.4,-4.88 -7.49,0 -11.94,8.57 -11.94,17.47 0,6.84 3.58,8.9 7.16,8.9 2.5,0 5.64,-1.41 7.81,-4.23 z"
+                  id="path1" style="fill:#ffffff" />
+                <path
+                  d="m 165.9,124.5 c 0,-19.97 11.4,-33.64 25.51,-33.64 9.23,0 13.02,4.34 15.3,8.14 h 0.65 l 3.8,-7.05 h 14.33 l -6.3,36.03 c -0.32,1.63 -0.98,5.1 1.95,5.1 1.3,0 2.71,-0.43 3.69,-0.87 l -1.74,12.27 c -2.82,0.87 -8.79,1.74 -12.16,1.74 -7.16,0 -9.88,-2.71 -10.53,-7.6 h -0.54 c -2.82,2.82 -8.14,7.6 -16.5,7.6 -8.36,0 -17.47,-5.54 -17.47,-21.71 z m 37.55,-16.06 c -0.76,-2.06 -2.6,-4.23 -5.75,-4.23 -5.75,0 -11.29,7.16 -11.29,19.43 0,7.05 2.82,9.33 6.3,9.33 3.04,0 5.43,-1.74 7.16,-4.02 z"
+                  id="path2" style="fill:#ffffff" />
+                <path
+                  d="m 252.41,101.06 c 2.93,-5.97 7.92,-10.2 16.39,-10.2 8.9,0 13.35,3.91 15.3,10.42 h 0.65 c 2.93,-5.43 7.27,-10.42 15.74,-10.42 9.99,0 16.17,4.88 16.17,15.52 0,1.95 -0.22,4.23 -0.65,6.4 l -2.71,15.2 c -0.33,1.85 -0.76,4.99 2.17,4.99 1.19,0 2.61,-0.43 3.58,-0.87 l -1.74,12.37 c -2.82,0.87 -8.79,1.74 -12.05,1.74 -8.47,0 -11.94,-4.01 -11.94,-10.31 0,-1.41 0.22,-2.93 0.44,-4.34 l 3.25,-18.78 c 0.22,-1.3 0.33,-2.82 0.33,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.71,3.36 -9.66,14.43 l -4.56,26.48 h -19.1 l 5.75,-32.34 c 0.22,-1.3 0.43,-2.82 0.43,-3.8 0,-3.15 -1.3,-4.77 -4.56,-4.77 -3.69,0 -7.81,3.36 -9.77,14.43 l -4.67,26.48 h -19.21 l 6.4,-36.25 c 0.32,-2.06 0.54,-4.67 -2.39,-4.67 -1.19,0 -2.5,0.32 -3.36,0.76 l 1.52,-12.59 c 2.61,-0.76 8.03,-1.52 11.72,-1.52 7.7,0 10.53,4.45 10.53,8.03 0,0.54 0,1.41 -0.11,2.17 h 0.65 z"
+                  id="path3" style="fill:#ffffff" />
+                <path
+                  d="m 353.89,90.86 c 14.76,0 23.66,7.27 23.66,17.69 0,3.8 -1.08,8.68 -2.61,11.83 H 341.3 c -0.33,1.74 -0.44,3.36 -0.44,4.67 0,5.86 2.61,8.47 6.84,8.47 4.67,0 8.79,-1.95 8.79,-7.05 l 17.47,0.11 c 0,13.67 -11.83,19.64 -26.7,19.64 -16.82,0 -25.18,-8.14 -25.18,-20.95 0,-18.67 8.79,-34.4 31.8,-34.4 z m 5.75,20.51 c 0.32,-0.87 0.54,-2.06 0.54,-3.36 0,-4.02 -2.71,-5.97 -6.62,-5.97 -4.99,0 -8.9,2.71 -10.63,9.33 z"
+                  id="path4" style="fill:#ffffff" />
+                <path
+                  d="m 394.92,127.54 c -0.22,0.87 -0.43,1.74 -0.43,2.71 0,2.71 1.52,5.21 7.6,5.21 5.43,0 7.92,-2.17 7.92,-4.99 0,-2.28 -1.85,-3.58 -5.43,-4.45 l -6.73,-1.63 c -11.29,-2.71 -16.17,-6.84 -16.17,-14.33 0,-11.61 9.12,-19.21 27.78,-19.21 18.66,0 22.47,8.36 22.47,13.78 0,1.41 -0.22,3.15 -0.65,4.45 l -16.71,0.11 c 0.32,-0.87 0.43,-1.85 0.43,-2.93 0,-1.95 -1.52,-4.45 -6.73,-4.45 -5.21,0 -7.82,2.39 -7.82,4.99 0,2.93 2.82,3.8 6.08,4.56 l 7.6,1.74 c 10.96,2.5 15.41,7.38 15.41,13.89 0,10.74 -7.82,19.21 -28.44,19.21 -19.1,0 -23.99,-8.25 -23.99,-14.22 0,-1.3 0.22,-2.93 0.65,-4.34 l 17.15,-0.11 z"
+                  id="path5" style="fill:#ffffff" />
+                <path
+                  d="M 37.45,85.48 C 34.89,100.02 26.63,108.16 13.26,108.16 7.91,108.16 3.38,107.23 0,106.3 L 4.07,92.58 c 2.09,0.7 4.3,1.4 6.75,1.4 3.02,0 5.12,-2.56 6.28,-9.19 L 27.22,26.76 H 47.8 L 37.45,85.49 Z M 31.52,2.91 H 51.99 L 49.2,18.49 H 28.73 Z"
+                  id="path6" style="fill:#ffffff" />
+                <path
+                  d="m 46.75,61.64 c 0,-21.4 12.21,-36.05 27.33,-36.05 9.88,0 13.95,4.65 16.4,8.72 h 0.7 l 4.07,-7.56 h 15.35 l -6.75,38.61 c -0.35,1.75 -1.05,5.47 2.09,5.47 1.4,0 2.91,-0.46 3.95,-0.93 l -1.86,13.14 C 105.01,83.97 98.61,84.9 95,84.9 87.32,84.9 84.42,81.99 83.72,76.76 H 83.14 C 80.12,79.78 74.42,84.9 65.46,84.9 56.5,84.9 46.74,78.97 46.74,61.64 Z M 86.99,44.43 c -0.81,-2.21 -2.79,-4.54 -6.16,-4.54 -6.16,0 -12.09,7.67 -12.09,20.82 0,7.56 3.02,10 6.75,10 3.26,0 5.81,-1.86 7.67,-4.3 L 87,44.43 Z"
+                  id="path7" style="fill:#ffffff" />
+                <path
+                  d="m 146.18,25.58 c 20,0 25.24,10.58 25.24,16.86 0,2.91 -0.81,5.47 -1.51,7.21 l -20.12,0.23 c 0.35,-1.51 0.7,-2.79 0.7,-4.54 0,-2.91 -1.28,-5.47 -5.47,-5.47 -7.33,0 -11.75,10 -11.75,21.51 0,5.7 2.33,9.3 6.51,9.3 4.77,0 8.26,-3.84 8.26,-10 l 20,0.12 c 0,12.91 -5.47,24.07 -28.96,24.07 -17.1,0 -26.86,-8.84 -26.86,-22.91 0,-19.19 10,-36.4 33.96,-36.4 z"
+                  id="path8" style="fill:#ffffff" />
+                <path
+                  d="m 226.65,70.13 c 1.05,0 2.32,-0.23 3.37,-0.58 l -2.44,13.72 c -3.14,1.05 -7.33,1.63 -11.28,1.63 -8.26,0 -10.47,-5.12 -11.51,-8.61 -1.74,-5.7 -4.42,-13.84 -5.58,-16.05 h -5.47 l -4.07,23.49 H 169.09 L 183.85,0 h 20.59 l -8.37,47.22 4.42,-0.46 c 2.44,-2.33 12.33,-18.03 14.65,-20 h 21.63 l -0.47,2.33 c -2.44,2.09 -15.58,20.47 -19.07,24.31 1.16,1.98 4.07,9.65 6.05,14.42 0.81,1.74 1.86,2.32 3.37,2.32 z"
+                  id="path9" style="fill:#ffffff" />
+                <path
+                  d="m 246.42,0 h 20.47 l -5.82,32.33 h 0.58 c 3.14,-3.49 7.79,-6.75 14.77,-6.75 8.72,0 18.84,5.7 18.84,22.21 0,27.56 -16.28,37.1 -28.72,37.1 -9.3,0 -13.26,-4.88 -15.24,-7.91 h -0.58 l -3.95,6.75 h -15.35 z m 8.61,66.75 c 0.93,2.21 3.37,3.95 6.39,3.95 6.05,0 12.91,-6.98 12.91,-20.82 0,-7.56 -3.72,-10 -7.33,-10 -2.79,0 -6.16,1.98 -8.14,4.54 l -3.84,22.33 z"
+                  id="path10" style="fill:#ffffff" />
+                <path
+                  d="m 330.15,25.58 c 19.31,0 27.68,9.65 27.68,23.37 0,20.7 -11.28,35.94 -33.03,35.94 -19.31,0 -27.45,-9.54 -27.45,-23.14 0,-20.7 10.93,-36.17 32.8,-36.17 z m 6.63,23.37 c 0,-6.16 -2.68,-9.07 -6.86,-9.07 -7.44,0 -11.74,7.67 -11.74,21.75 0,6.28 2.79,9.07 6.86,9.07 7.33,0 11.75,-7.56 11.75,-21.75 z"
+                  id="path11" style="fill:#ffffff" />
+                <path
+                  d="m 388.18,36.52 c 1.05,3.37 1.98,6.51 2.56,9.3 h 0.47 c 1.74,-3.61 3.72,-6.51 6.05,-9.77 l 6.63,-9.3 h 21.86 l -0.35,1.98 -21.52,25.82 6.4,12.68 c 1.28,2.33 2.91,2.91 4.3,2.91 1.39,0 2.79,-0.35 3.84,-0.81 l -2.44,13.96 c -3.02,0.81 -7.44,1.63 -11.51,1.63 -6.63,0 -9.65,-3.37 -11.4,-8.49 l -1.4,-4.19 c -1.05,-3.14 -1.63,-5.81 -2.21,-8.49 h -0.58 c -1.63,3.6 -3.61,6.51 -5.7,9.53 l -7.44,10.47 h -21.86 l 0.35,-1.86 21.98,-26.87 -5.82,-11.74 c -1.05,-2.33 -3.02,-2.91 -4.65,-2.91 -1.4,0 -2.67,0.35 -3.84,0.81 l 2.56,-13.95 c 3.02,-0.81 7.33,-1.63 11.51,-1.63 7.21,0 9.65,2.79 11.17,7.68 l 1.04,3.26 z"
+                  id="path12" style="fill:#ffffff" />
+                <path
+                  d="m 441.86,93.74 h 0.84 c 0.99,0 1.78,-0.33 1.78,-1.13 0,-0.7 -0.52,-1.17 -1.64,-1.17 -0.47,0 -0.8,0.05 -0.99,0.09 v 2.21 z m -0.04,4.32 h -1.78 c 0,0 0,-7.7 0,-7.7 0.7,-0.09 1.69,-0.24 2.96,-0.24 1.45,0 2.11,0.23 2.63,0.61 0.47,0.33 0.8,0.89 0.8,1.64 0,0.94 -0.7,1.55 -1.59,1.83 v 0.09 c 0.75,0.23 1.13,0.84 1.36,1.88 0.24,1.17 0.42,1.6 0.56,1.88 h -1.88 c -0.23,-0.28 -0.38,-0.94 -0.61,-1.88 -0.14,-0.8 -0.61,-1.17 -1.6,-1.17 h -0.84 c 0,0 0,3.05 0,3.05 z m -4.74,-3.99 c 0,3.43 2.58,6.15 6.01,6.14 3.33,0.05 5.86,-2.73 5.86,-6.1 0,-3.43 -2.54,-6.19 -5.96,-6.19 -3.33,0 -5.91,2.77 -5.91,6.15 m 13.84,0 c 0,4.32 -3.47,7.75 -7.88,7.75 -4.41,0 -7.93,-3.42 -7.94,-7.74 -0.01,-4.32 3.51,-7.7 7.97,-7.7 4.36,0 7.84,3.37 7.84,7.69"
+                  id="path13" style="fill:#ffffff" />
+              </svg>
+            </a>
+            </div>
+            <div class="col-md-3 col-md-6">
+              <div data-v-723ab9bc="" class="social-link-content">
+                <div data-v-723ab9bc="" class="socials"><a data-v-723ab9bc="" href="https://www.facebook.com/JackboxGames/"
+                    target="_blank"><span data-v-723ab9bc="" class="visually-hidden">Facebook</span><img data-v-723ab9bc=""
+                      class="icon" src="/img/facebook-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a
+                    data-v-723ab9bc="" href="https://www.instagram.com/playjackboxgames/" target="_blank"><span
+                      data-v-723ab9bc="" class="visually-hidden">Instagram</span><img data-v-723ab9bc="" class="icon"
+                      src="/img/instagram-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+                    href="https://www.reddit.com/r/jackboxgames/" target="_blank"><span data-v-723ab9bc=""
+                      class="visually-hidden">Reddit</span><img data-v-723ab9bc="" class="icon" src="/img/reddit-svgrepo-com.svg"
+                      alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+                    href="https://www.tiktok.com/@playjackboxgames" target="_blank"><span data-v-723ab9bc=""
+                      class="visually-hidden">Tik Tok</span><img data-v-723ab9bc="" class="icon"
+                      src="/img/tiktok-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+                    href="https://twitter.com/jackboxgames" target="_blank"><span data-v-723ab9bc=""
+                      class="visually-hidden">Twitter</span><img data-v-723ab9bc="" class="icon"
+                      src="/img/twitter-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a><a data-v-723ab9bc=""
+                    href="https://www.youtube.com/jackboxgames" target="_blank"><span data-v-723ab9bc=""
+                      class="visually-hidden">Youtube</span><img data-v-723ab9bc="" class="icon"
+                      src="/img/youtube-svgrepo-com.svg" alt="" aria-hidden="true" focusable="false"></a></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="copyright">© Copyright <script>document.write(new Date().getFullYear())</script> Jackbox Games. All rights reserved.
+              </div>
+              <div class="copyright-to">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+              </div>
+              </div>
+        </div>
+        
+    </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
